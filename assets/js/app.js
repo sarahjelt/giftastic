@@ -15,7 +15,7 @@ function renderGifs() {
     var results = response.data;
 
     for (var i = 0; i < results.length; i++) {
-      var gifDiv = $("<div class='item'>");
+      var gifDiv = $("<div class='item col-md-4'>");
       var rating = results[i].rating;
       var p = $("<p>").text("Rating: " + rating);
       var img = $("<img>");
@@ -24,6 +24,7 @@ function renderGifs() {
       img.attr("data-animate", results[i].images.fixed_height.url);
       img.attr("data-state", "still");
       img.addClass("gif");
+
       gifDiv.prepend(p);
       gifDiv.prepend(img);
       $("#gifs-go-here").prepend(gifDiv);

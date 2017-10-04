@@ -1,9 +1,13 @@
-/*body {
-  background-color: yellow;
-}*/
+body {
+  background: url(../images/symphony.png);
+}
 
 button {
-  background-color: orange;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 4px solid #e6b800;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 5px;
 }
 
 p {
@@ -11,3 +15,27 @@ p {
   padding-bottom: 10px;
 }
 
+form {
+  padding-top: 20px;
+}
+
+.gif {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.item {
+  display: block;
+  height: 300px;
+}
+
+#add-new-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 4px solid #d1d1e0;
+  border-radius: 12px;
+  margin-top: 5px;
+}
+
+#gifs-go-here {
+  margin-top: 25px;
+}
